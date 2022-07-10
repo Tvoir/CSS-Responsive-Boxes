@@ -1,3 +1,40 @@
 body {
   background: blanchedalmond;
 }
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-items: space-between;
+}
+
+.a {
+  min-height: 20vh;
+  background-color: black;
+  flex-grow: 0;
+}
+
+.b {
+  background-color: aqua;
+  flex-grow: 2;
+}
+
+.c {
+  background-color: blue;
+  flex-grow: 1;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .a {
+    flex-basis: 100%;
+  }
+  .b,.c {
+    flex-basis: 10%;
+    height: 80vh;
+  }
+}                               

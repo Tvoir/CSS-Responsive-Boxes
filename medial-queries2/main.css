@@ -1,3 +1,77 @@
 body {
   background: papayawhip;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 60vh;
+}
+
+.a {
+  background-color: black;
+  flex-grow: 1;
+  width: 100%;
+  min-height: 20vh;
+}
+
+.b {
+  background-color: rgb(17, 255, 0);
+  flex-grow: 1;
+  width: 100%;
+  min-height: 37vh;
+}
+
+.c {
+ 
+  background-color: blue;
+  flex-grow: 1;
+  width:30%;
+  min-height: 20vh;
+}
+
+.d {
+  background-color: pink;
+  flex-grow: 1;
+  width: 30%;
+}
+
+.e {
+  background-color: blue;
+  flex-grow: 1;
+  width: 30%;
+}
+
+.f {
+  background-color: aqua;
+  flex-grow: 1;
+  width: 100%;
+  min-height: 20vh;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .a {
+    flex-basis: 100%;
+  }
+  .b {
+    flex-basis: 75%;
+  }
+  .c{
+    flex-basis: 25%;
+    height: 400px;
+
+  
+  }
+  .d, .e {
+    flex-basis: 25%;
+    flex-grow: 0;
+  }
+  .f{
+    flex-basis: 25%;
+    flex-grow: 0;
+  }
